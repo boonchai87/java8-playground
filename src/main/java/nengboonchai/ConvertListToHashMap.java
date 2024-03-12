@@ -30,12 +30,13 @@ public class ConvertListToHashMap {
         // above given for loop will do
         // put the list items in the Map
         list.forEach(
-            (n) -> { map.put(n.getkey(), n.getvalue()); });
+            n -> { map.put(n.getkey(), n.getvalue()); });
  
         // Printing the given map
         System.out.println("Map : " + map);
     }
 }
+// inner class
 class ListItems {
  
     // key will act as an id of the value
