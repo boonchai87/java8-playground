@@ -1,4 +1,4 @@
-package nengboonchai;
+package nengboonchai.methodReference;
 
 import java.util.ArrayList;
 import java.util.List;

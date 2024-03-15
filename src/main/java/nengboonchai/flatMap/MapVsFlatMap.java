@@ -1,4 +1,4 @@
-package nengboonchai;
+package nengboonchai.flatMap;
 
 import java.util.ArrayList;
 import java.util.Arrays;

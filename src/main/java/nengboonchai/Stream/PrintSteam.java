@@ -1,4 +1,4 @@
-package nengboonchai.testStream;
+package nengboonchai.Stream;
 
 import java.util.ArrayList;
 import java.util.stream.Stream;

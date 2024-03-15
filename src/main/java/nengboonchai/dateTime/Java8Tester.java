@@ -12,6 +12,10 @@ public class Java8Tester {
    }
 	
    public void testLocalDateTime() {
+      // Local − Simplified date-time API with no complexity of timezone handling.
+
+      //Zoned − Specialized date-time API to deal with various timezones.
+
       // Get the current date and time
       LocalDateTime currentTime = LocalDateTime.now();
       System.out.println("Current DateTime: " + currentTime);
