@@ -1,11 +1,11 @@
-package nengboonchai;
+package nengboonchai.sorting;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-public class Sorting {
+public class TesstSorting {
      public static void main(String args[]) {
    
       List<String> names1 = new ArrayList<String>();
@@ -22,7 +22,7 @@ public class Sorting {
       names2.add("Naresh ");
       names2.add("Kalpesh ");
 		
-      Sorting tester = new Sorting();
+      TesstSorting tester = new TesstSorting();
       System.out.println("Sort using Java 7 syntax: ");
 		
       tester.sortUsingJava7(names1);

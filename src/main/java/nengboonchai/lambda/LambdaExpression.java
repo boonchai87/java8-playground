@@ -1,4 +1,4 @@
-package com.example;
+package nengboonchai.lambda;
 
 public class LambdaExpression {
     public static void main(String args[]) {

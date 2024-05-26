@@ -1,10 +1,23 @@
-package nengboonchai.localtime;
+package nengboonchai.localDateTime;
+
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
 
 public class ConvertStringToLocalDateTime {
     public static void main(String[] args) {
+        Date d = new Date();
+        System.out.println(d);
+        Date d2 = Calendar.getInstance().getTime();
+        System.out.println(d2);
+        GregorianCalendar today = new GregorianCalendar ();
+        System.out.println(today);
+        Date d3 = GregorianCalendar.getInstance().getTime();
+        System.out.println(d3);
+
 // Example String representing a date
         String dateString = "2024-01-20";
 
