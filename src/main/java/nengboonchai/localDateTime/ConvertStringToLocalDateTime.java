@@ -13,7 +13,7 @@ public class ConvertStringToLocalDateTime {
         System.out.println(d);
         Date d2 = Calendar.getInstance().getTime();
         System.out.println(d2);
-        GregorianCalendar today = new GregorianCalendar ();
+        GregorianCalendar today = new GregorianCalendar();
         System.out.println(today);
         Date d3 = GregorianCalendar.getInstance().getTime();
         System.out.println(d3);

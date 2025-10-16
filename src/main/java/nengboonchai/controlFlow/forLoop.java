@@ -1,12 +1,7 @@
 package nengboonchai.controlFlow;
 
-public class TestIfThenElse {
+public class forLoop {
     public static void main(String[] args) {
-        // if
-
-        // then
-        // else
-
 
     }
 }

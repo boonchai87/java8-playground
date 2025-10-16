@@ -20,11 +20,6 @@ public class TestStream {
         Stream<String> streamOfCollection = collection.stream();
         System.out.println(streamOfCollection);
 
-        Stream<String> stream =
-                Stream.of("a", "b", "c").filter(element -> element.contains("b"));
-        Optional<String> anyElement = stream.findAny();
-
-        System.out.println(anyElement.get());
 
         List<Integer> number = Arrays.asList(2,3,4,5);
         List square = number.stream().map(x->x*x).collect(Collectors.toList());
@@ -35,23 +30,14 @@ public class TestStream {
         List result = names.stream().sorted().collect(Collectors.toList());
         System.out.println(result);
 
-        // forEach
-        List<Integer> number2 = Arrays.asList(2,3,4,5);
-        number2.stream().map(x->x*x).forEach(y->System.out.println(y));
+
 
         List<Integer> number3 = Arrays.asList(2,3,4,5);
         int even = number3.stream().filter(x->x%2==0).reduce(0,(ans,i)-> ans+i);
         System.out.println(even);
 
         // collect method returns a set
-        Set<Integer> squareSet
-                = number2.stream()
-                .map(x -> x * x)
-                .collect(Collectors.toSet());
-    }
-}
-class Employee{
-    public Employee(Integer id,String name,Double salary){
 
     }
 }
+

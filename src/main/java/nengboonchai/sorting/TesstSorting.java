@@ -1,9 +1,6 @@
 package nengboonchai.sorting;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 
 public class TesstSorting {
      public static void main(String args[]) {
@@ -15,12 +12,8 @@ public class TesstSorting {
       names1.add("Naresh ");
       names1.add("Kalpesh ");
 		
-      List<String> names2 = new ArrayList<String>();
-      names2.add("Mahesh ");
-      names2.add("Suresh ");
-      names2.add("Ramesh ");
-      names2.add("Naresh ");
-      names2.add("Kalpesh ");
+      List<String> names2 = Arrays.asList("Mahesh ","Suresh ","Ramesh ","Naresh ","Kalpesh ");
+
 		
       TesstSorting tester = new TesstSorting();
       System.out.println("Sort using Java 7 syntax: ");

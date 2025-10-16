@@ -25,6 +25,6 @@ public class TestStream2
 
         marks.stream().map(i ->i+6).collect(Collectors.toList());
         marks.stream().filter(i -> i%2 ==0).collect(Collectors.toList());
-        System.out.println(marks.stream().findFirst());
+        System.out.println(marks.stream().findFirst());// get first
     }
 }

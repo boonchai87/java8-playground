@@ -12,10 +12,13 @@ import java.util.Locale;
 public class FormatLocalDateTime {
     public static void main(String[] args) {
         System.out.println(ZoneId.getAvailableZoneIds());
-        LocalDateTime now = LocalDateTime.now(ZoneId.of("Japan"));
-        System.out.println("Before Formatting: " + now);
+        LocalDateTime now = LocalDateTime.now();
+        System.out.println("Time Now: " + now);
+
+        LocalDateTime nowJapn = LocalDateTime.now(ZoneId.of("Japan"));
+        System.out.println("Before Formatting: " + nowJapn);
         DateTimeFormatter format = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
-        String formatDateTime = now.format(format);
+        String formatDateTime = nowJapn.format(format);
         // convert string to
 
         System.out.println("After Formatting: " + formatDateTime);
