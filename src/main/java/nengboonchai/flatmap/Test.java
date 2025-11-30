@@ -19,7 +19,6 @@ public class Test {
                 .flatMap(list -> list.stream())
                 .forEach(System.out::println);
 
-
         // convert array of array list to flat list.
         List list = listOfLists.stream()
                 .flatMap(Collection::stream)

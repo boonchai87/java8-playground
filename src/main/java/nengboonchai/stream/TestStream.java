@@ -12,6 +12,7 @@ public class TestStream {
     };
     public static void main(String[] args) {
         Stream.of(arrayOfEmps);
+
         List empList = Arrays.asList(arrayOfEmps);
         //empList.stream().forEach(e -> e.salaryIncrement(10.0));
         //Stream empStream = list.stream();
@@ -34,9 +35,14 @@ public class TestStream {
 
         List<Integer> number3 = Arrays.asList(2,3,4,5);
         int even = number3.stream().filter(x->x%2==0).reduce(0,(ans,i)-> ans+i);
-        System.out.println(even);
+        System.out.println(number3.stream().filter(x->x%2==0).collect(Collectors.toList()));
+        //System.out.println(even);
 
-        // collect method returns a set
+        List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
+        Optional<Integer> sum = numbers.stream()
+                .reduce(Integer::sum); // Sum all elements
+
+        sum.ifPresent(s -> System.out.println("Sum: " + s)); // Output: Sum: 15
 
     }
 }
